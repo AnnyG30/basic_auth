@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login & Registro - Basic Auth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Demo Basic Auth</h1>
+
+  <div class="tabs">
+    <button id="tab-login" class="tab active">Login</button>
+    <button id="tab-register" class="tab">Registro</button>
+  </div>
+
+  <!-- LOGIN -->
+  <div id="login-panel" class="panel active">
+    <h2>Login</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="login-username">Usuario</label>
+        <input type="text" id="login-username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="login-password">Contraseña</label>
+        <input type="password" id="login-password" required>
+      </div>
+
+      <button type="submit" class="btn">Entrar</button>
+    </form>
+
+    <div id="login-result" class="result"></div>
+  </div>
+
+  <!-- REGISTRO -->
+  <div id="register-panel" class="panel">
+    <h2>Registro</h2>
+    <form id="register-form">
+      <div class="form-group">
+        <label for="register-username">Usuario</label>
+        <input type="text" id="register-username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="register-password">Contraseña</label>
+        <input type="password" id="register-password" required>
+      </div>
+
+      <button type="submit" class="btn">Crear cuenta</button>
+    </form>
+
+    <div id="register-result" class="result"></div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
